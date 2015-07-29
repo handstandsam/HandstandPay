@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true"
+    android:orientation="horizontal"
+    tools:context=".PayActivity">
+
+    <com.handstandsam.handstandpay.view.PayView
+        android:id="@+id/pay_view"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"></com.handstandsam.handstandpay.view.PayView>
+
+
+</LinearLayout>

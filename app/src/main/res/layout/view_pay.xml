@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/coin_container"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/android_guy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:alpha="0"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/transparent" />
+
+            <ImageView
+                android:id="@+id/imgFront"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/front" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/android_guy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/android_hands_up" />
+
+        </RelativeLayout>
+
+        <com.handstandsam.handstandpay.view.CreditCardView
+            android:id="@+id/credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/android_guy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:clickable="true"></com.handstandsam.handstandpay.view.CreditCardView>
+    </RelativeLayout>
+</RelativeLayout>

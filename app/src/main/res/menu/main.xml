@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/set_as_default"
+        android:title="Set as Default Payment App" />
+    <item
+        android:id="@+id/play_animation"
+        android:title="Play Payment Animation" />
+    <item
+        android:id="@+id/edit_magstripe"
+        android:title="Edit Magstripe Data" />
+
+</menu>

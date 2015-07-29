@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Handstand Pay</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- HCE Configuration -->
+    <string name="apdu_description">Handstand Pay</string>
+    <string name="aid_group_description">Handstand Pay is the best.</string>
+    <string name="aid_ppse_description">Proximity Payment System Environment (PPSE)</string>
+    <string name="aid_mastercard_description">MasterCard</string>
+    <string name="aid_visa_description">Visa</string>
+
+
+    <string name="unset_value">{Not Set}</string>
+
+    <string name="amazon_url_usb_reader">http://www.amazon.com/dp/B00E85TH9I</string>
+</resources>

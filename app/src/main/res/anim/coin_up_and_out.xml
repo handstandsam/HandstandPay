@@ -1,0 +1,15 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <translate
+        android:duration="@integer/coin_up_and_out_duration"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:toXDelta="0"
+        android:toYDelta="-500"></translate>
+    <alpha
+        android:duration="@integer/coin_up_and_out_duration"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+
+</set>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="coin_flip_duration">500</integer>
+    <integer name="coin_drop_duration">600</integer>
+
+    <integer name="pre_handstand_duration">500</integer>
+    <integer name="handstand_duration">500</integer>
+
+    <integer name="handstand_reset_duration">600</integer>
+
+    <integer name="coin_fall_offset">600</integer>
+    <integer name="coin_fall_duration">400</integer>
+    <integer name="coin_fall_alpha_duration">100</integer>
+
+    <integer name="coin_hit_duration">400</integer>
+
+    <integer name="jump_duration">150</integer>
+
+    <integer name="reset_delay">200</integer>
+
+
+    <integer name="coin_up_and_out_duration">300</integer>
+
+    <integer name="fade_in_and_out">1000</integer>
+    <integer name="zoom_out">500</integer>
+
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/usb_reader"
+                android:padding="5sp"
+                android:text="Paste the magstripe data from your Visa card below.  You should see your card number, name and expiration date populate above.  You can email yourself the magstripe track or send it some other way so that you can copy/paste it from your phone.  If you don't have a USB Magstripe reader, click on the image to order one on Amazon."
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/usb_reader"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:contentDescription="http://www.amazon.com/gp/product/B00D3D3L8Y"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/usb_magstripe_reader" />
+
+        </RelativeLayout>
+
+        <com.handstandsam.handstandpay.view.CreditCardView
+            android:id="@+id/credit_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:clickable="true"></com.handstandsam.handstandpay.view.CreditCardView>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:text="Note: This only works for Visa Credit/Debit cards.  It is recommended to use this with a pre paid card as to not use your actual Visa Card."
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/swipe_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:linksClickable="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/clear_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="CLEAR" />
+
+            <Button
+                android:id="@+id/reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="RESET"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/default_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/reset_button"
+                android:text="DEFAULT"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="SAVE" />
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/save_button"
+                android:text="CANCEL" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

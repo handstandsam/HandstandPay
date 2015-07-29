@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="244dp"
+        android:layout_height="141dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/rounded_background"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/emv_transparent" />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/card_number"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="20dp"
+            android:clickable="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/transparent" />
+
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/imageView"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:clickable="false"
+            android:text="4111 1111 1111 1111"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/exp_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card_number"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="52dp"
+            android:clickable="false"
+            android:text="EXP 02/18"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/customer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/exp_date"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="52dp"
+            android:clickable="false"
+            android:text="The Cardholder"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+</LinearLayout>
