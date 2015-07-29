@@ -7,3 +7,9 @@ http://andevcon.com/boston/classes#MobilePaymentsonAndroidUsingHostCardEmulation
 
 APDU logic from:
 https://github.com/dimalinux/SwipeYours
+
+Helpful tools:
+SmartCard Reader: https://github.com/doc-rj/smartcard-reader
+
+Physical mag stripe reader:
+http://www.amazon.com/dp/B00E85TH9I
