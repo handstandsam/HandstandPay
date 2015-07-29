@@ -11,9 +11,11 @@ import android.nfc.NfcAdapter;
 import android.nfc.cardemulation.CardEmulation;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.content.LocalBroadcastManager;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.handstandsam.handstandpay.R;
 import com.handstandsam.handstandpay.apdu.HandstandApduService;
@@ -147,6 +149,16 @@ public class PayActivity extends Activity {
         } else if (id == R.id.edit_magstripe) {
             startEditMagstripeActivity();
             return true;
+        } else if (id == R.id.nfc_settings) {
+            NfcAdapter mNfcAdapter = NfcAdapter.getDefaultAdapter(PayActivity.this);
+
+            //Tell the user whether NFC is enabled
+            Toast.makeText(PayActivity.this, "NFC is enabled: " + mNfcAdapter.isEnabled(), Toast.LENGTH_SHORT).show();
+
+            //Show the settings regardless of whether it is enabled or not
+            Intent intent = new Intent(Settings.ACTION_NFC_SETTINGS);
+            startActivity(intent);
+
         }
 
         return super.onOptionsItemSelected(item);

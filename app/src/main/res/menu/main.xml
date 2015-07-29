@@ -11,5 +11,8 @@
     <item
         android:id="@+id/edit_magstripe"
         android:title="Edit Magstripe Data" />
+    <item
+        android:id="@+id/nfc_settings"
+        android:title="NFC Settings" />
 
 </menu>
