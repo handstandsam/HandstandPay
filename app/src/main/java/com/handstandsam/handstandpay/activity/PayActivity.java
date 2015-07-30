@@ -153,12 +153,12 @@ public class PayActivity extends Activity {
             NfcAdapter mNfcAdapter = NfcAdapter.getDefaultAdapter(PayActivity.this);
 
             //Tell the user whether NFC is enabled
-            Toast.makeText(PayActivity.this, "NFC is enabled: " + mNfcAdapter.isEnabled(), Toast.LENGTH_SHORT).show();
+            String message = "NFC is enabled: " + mNfcAdapter.isEnabled();
+            Toast.makeText(PayActivity.this, message, Toast.LENGTH_SHORT).show();
 
             //Show the settings regardless of whether it is enabled or not
             Intent intent = new Intent(Settings.ACTION_NFC_SETTINGS);
             startActivity(intent);
-
         }
 
         return super.onOptionsItemSelected(item);
