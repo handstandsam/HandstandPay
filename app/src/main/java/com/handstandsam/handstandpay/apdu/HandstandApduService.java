@@ -76,7 +76,9 @@ public class HandstandApduService extends HostApduService {
     @Override
     public void onDeactivated(int reason) {
         isProcessing = false;
-        LocalBroadcastManager.getInstance(getApplicationContext()).sendBroadcast(new Intent(PAYMENT_SENT));
+        Context context = getApplicationContext();
+        LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(context);
+        lbm.sendBroadcast(new Intent(PAYMENT_SENT));
     }
 
 
