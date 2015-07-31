@@ -2,6 +2,16 @@
 
 Android Contactless Payment Application using HCE with custom UI and Visa MSD based APDUs.
 
+##Screenshots
+<img src="https://raw.githubusercontent.com/handstandsam/HandstandPay/master/screenshots/pay_activity.png"/>
+<img src="https://raw.githubusercontent.com/handstandsam/HandstandPay/master/screenshots/mag_stripe_activity.png"/>
+
+
+##Handstand Pay in Use
+<img src="https://raw.githubusercontent.com/handstandsam/HandstandPay/master/screenshots/terminal_authorized.png"/>
+
+##External Links
+
 Shown during presentation on July 31, 2015:
 http://andevcon.com/boston/classes#MobilePaymentsonAndroidUsingHostCardEmulationHCE
 
