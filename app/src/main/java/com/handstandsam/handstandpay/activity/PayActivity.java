@@ -112,22 +112,22 @@ public class PayActivity extends Activity {
         if (isLollipopOrHigher()) {
             setAsPreferredHceService();
         }
-        LocalBroadcastManager.getInstance(PayActivity.this).registerReceiver(animationBroadcastReceiver, new IntentFilter(HandstandApduService.PAYMENT_SENT));
+        IntentFilter paymentSentIntentFilter = new IntentFilter(HandstandApduService.PAYMENT_SENT);
+        LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(PayActivity.this);
+        lbm.registerReceiver(animationBroadcastReceiver, paymentSentIntentFilter);
 
-        init();
-    }
-
-    void init() {
         creditCardView.updateValues();
     }
-
+    
     @Override
     public void onPause() {
         super.onPause();
         if (isLollipopOrHigher()) {
             unsetAsPreferredHceService();
         }
-        LocalBroadcastManager.getInstance(PayActivity.this).unregisterReceiver(animationBroadcastReceiver);
+        IntentFilter paymentSentIntentFilter = new IntentFilter(HandstandApduService.PAYMENT_SENT);
+        LocalBroadcastManager lbm = LocalBroadcastManager.getInstance(PayActivity.this);
+        lbm.unregisterReceiver(animationBroadcastReceiver);
     }
 
     @Override
